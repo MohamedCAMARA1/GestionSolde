@@ -1,20 +1,15 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Image, Text, View } from "react-native";
+import style from "./src/lib/Style/Style";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Application gestion de solde Hadja Mariama Soumah</Text>
+    <View style={style.launch}>
+      <Image
+        style={style.logo}
+        source={require("./src/lib/icons/school_logo.png")}
+      />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
